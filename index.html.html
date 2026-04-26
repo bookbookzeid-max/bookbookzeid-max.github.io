@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<!-- saved from url=(0231)file:///C:/Users/%D8%B2%D9%8A%D8%AF%D8%A7%D9%86/Desktop/%D8%A7%D9%84%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%20-%20%D8%B2%D9%8A%D8%AF%D8%A7%D9%86%20%D8%A8%D9%88%D9%83%D9%85%D8%A9%20v7.5.html -->
+<html lang="ar" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملف الإلكتروني - زيدان بوكمة</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', 'Tahoma', 'Arial', sans-serif; background-color: #f8f9fa; }
+        .container { max-width: 1200px; margin: 30px auto; background-color: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-radius: 8px; overflow: hidden; }
+        .header { background-color: #1b4332; padding: 25px 30px; border-bottom: 3px solid #ffb703; }
+        .header h1 { color: white; font-size: 2.2em; font-weight: 500; margin-bottom: 8px; }
+        .student-info { display: flex; flex-wrap: wrap; gap: 30px; margin-top: 15px; color: #e0e0e0; font-size: 0.95em; }
+        .student-info span { display: flex; align-items: center; gap: 5px; }
+        .layout { display: flex; min-height: 600px; }
+        .sidebar { width: 260px; background-color: #1b4332; padding: 20px 0; }
+        .sidebar-menu { list-style: none; }
+        .sidebar-item { padding: 12px 25px; color: #d4edda; font-size: 1em; cursor: pointer; transition: all 0.3s; border-right: 3px solid transparent; }
+        .sidebar-item:hover { background-color: #2d6a4f; color: white; }
+        .sidebar-item.active { background-color: #2d6a4f; color: white; border-right-color: #ffb703; }
+        .main-content { flex: 1; padding: 30px; background-color: white; }
+        .breadcrumb { color: #6c757d; font-size: 0.9em; margin-bottom: 20px; }
+        .breadcrumb a { color: #2d6a4f; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .page-title { font-size: 2em; color: #1b4332; margin-bottom: 10px; font-weight: 500; }
+        .outcomes { background-color: #f0f7f4; padding: 15px 20px; border-radius: 6px; margin: 20px 0; border-right: 4px solid #2d6a4f; font-size: 0.95em; line-height: 1.8; }
+        .outcomes strong { color: #1b4332; }
+        .impression-title { display: flex; align-items: center; gap: 10px; margin: 20px 0 15px 0; color: #2d6a4f; }
+        .impression-title span { background-color: #ffb703; color: #1b4332; padding: 5px 12px; border-radius: 20px; font-size: 0.85em; font-weight: 500; }
+        .impression-image { margin: 20px 0; text-align: center; }
+        .impression-image img { max-width: 100%; max-height: 250px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border: 2px solid #dee2e6; object-fit: cover; }
+        .content-text { line-height: 2; color: #333; text-align: justify; margin-bottom: 20px; }
+        .content-text p { margin-bottom: 15px; }
+        .content-text h3 { color: #1b4332; margin: 25px 0 15px 0; font-size: 1.3em; }
+        .content-text h4 { color: #2d6a4f; margin: 20px 0 10px 0; font-size: 1.1em; }
+        .content-text ul, .content-text ol { margin: 15px 30px; }
+        .content-text li { margin-bottom: 8px; }
+        .evidence-section { margin-top: 30px; padding-top: 20px; border-top: 1px solid #dee2e6; }
+        .evidence-title { color: #1b4332; font-size: 1.2em; margin-bottom: 15px; }
+        .file-list { list-style: none; }
+        .file-list li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; gap: 10px; }
+        .file-list li:last-child { border-bottom: none; }
+        .file-list a { color: #2d6a4f; text-decoration: none; }
+        .file-list a:hover { text-decoration: underline; color: #ffb703; }
+        .file-icon { color: #ffb703; font-size: 1.2em; }
+        .weblinks { margin: 15px 0; }
+        .weblinks a { display: block; padding: 8px 0; color: #2d6a4f; text-decoration: none; }
+        .weblinks a:hover { color: #ffb703; text-decoration: underline; }
+        .footer { background-color: #f8f9fa; padding: 12px 30px; border-top: 1px solid #dee2e6; color: #6c757d; font-size: 0.85em; display: flex; justify-content: space-between; }
+        .page-section { display: none; }
+        .page-section.active { display: block; }
+        .contact-info { background-color: #f0f7f4; padding: 20px; border-radius: 8px; margin-top: 30px; text-align: center; line-height: 2; }
+        .verse { font-family: 'Traditional Arabic', 'Times New Roman', serif; font-size: 1.3em; color: #1b4332; margin: 20px 0; text-align: center; }
+        @media (max-width: 768px) { .layout { flex-direction: column; } .sidebar { width: 100%; } .header h1 { font-size: 1.8em; } }
+        .download-btn { display: inline-block; background-color: #ffb703; color: #1b4332; padding: 5px 15px; border-radius: 20px; font-size: 0.85em; text-decoration: none; margin-right: 10px; }
+        .download-btn:hover { background-color: #e6a817; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>الملف الإلكتروني - زيدان بوكمة</h1>
+            <div class="student-info">
+                <span>📋 عنوان الواجب: الملف الإلكتروني</span>
+                <span>📚 اسم المقرر: التدريب الميداني</span>
+                <span>🔢 رقم المقرر: EDPR 583</span>
+                <span>👨‍🏫 المشرف الجامعي: الأستاذ ربيع الهشلمون</span>
+                <span>👤 اسم الطالب: زيدان بوكمة</span>
+                <span>🆔 رقم القيد: 2502462</span>
+                <span>📅 الفصل: ربيع 2026</span>
+            </div>
+        </div>
+        <div class="layout">
+            <div class="sidebar">
+                <ul class="sidebar-menu">
+                    <li class="sidebar-item" data-page="home">🏠 HOME</li>
+                    <li class="sidebar-item" data-page="content">📖 المحتوى</li>
+                    <li class="sidebar-item" data-page="planning">📝 أصول التدريس - التخطيط للدروس</li>
+                    <li class="sidebar-item" data-page="teaching">🎯 أصول التدريس - التخطيط للبيئة التعليمية</li>
+                    <li class="sidebar-item" data-page="assessment">📊 أصول التدريس - التقييم</li>
+                    <li class="sidebar-item" data-page="technology">💻 التكنولوجيا</li>
+                    <li class="sidebar-item" data-page="diversity">🌍 التنوع</li>
+                    <li class="sidebar-item" data-page="problemsolving">🔧 حل المشكلات</li>
+                    <li class="sidebar-item" data-page="research">📚 الاستقصاء البحثي</li>
+                    <li class="sidebar-item" data-page="ethics">🤝 الأخلاقيات المهنية</li>
+                    <li class="sidebar-item active" data-page="initiative">🚀 المبادرة</li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <!-- Home Page -->
+                <div id="home" class="page-section">
+                    <div class="breadcrumb">HOME</div>
+                    <h2 class="page-title">الملف الإلكتروني</h2>
+                    <div class="impression-image">
+                        <img src="./الملف الإلكتروني - زيدان بوكمة النسخة النهائية 2_files/pexels-photo-267586.jpeg" alt="مكتب وأدوات تعليمية">
+                    </div>
+                    <div style="text-align: center; padding: 40px 20px;">
+                        <h3 style="color: #1b4332; margin-bottom: 20px; font-size: 1.8em;">زيدان بوكمة</h3>
+                        <p style="font-size: 1.2em; color: #555; margin-bottom: 15px;">بكالوريوس التربية في التربية الإسلامية</p>
+                        <p style="color: #777; margin-bottom: 30px;">جامعة قطر - كلية التربية</p>
+                        <div style="background-color: #f0f7f4; padding: 30px; border-radius: 8px; max-width: 800px; margin: 0 auto; text-align: right;">
+                            <p style="margin-bottom: 15px;"><strong>مرحباً بكم في ملفي الإلكتروني لمقرر التدريب الميداني.</strong></p>
+                            <p>يحتوي هذا الملف على توثيق شامل لرحلتي التدريبية، متضمناً:</p>
+                            <ul style="margin: 20px 30px; line-height: 2;">
+                                <li>الفلسفة التربوية وتحليل المحتوى وتصميم الوحدة التعليمية</li>
+                                <li>استراتيجيات التخطيط والتدريس والتقويم</li>
+                                <li>توظيف التكنولوجيا (منصة Nearpod)</li>
+                                <li>مراعاة التنوع والفروق الفردية</li>
+                                <li>البحث الإجرائي وحل المشكلات</li>
+                                <li>القيم الأخلاقية والمبادرات المهنية</li>
+                            </ul>
+                            <p>يمكنكم التنقل بين أقسام الملف باستخدام القائمة الجانبية.</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>📧 البريد الإلكتروني:</strong> Ziedanezz8@gmai.com</p>
+                            <p><strong>🆔 رقم القيد:</strong> 2502462</p>
+                            <p><strong>🏛️ جامعة قطر – كلية التربية – برنامج بكالوريوس التربية في التربية الإسلامية</strong></p>
+                            <p><strong>👨‍🏫 المشرف الجامعي:</strong> الأستاذ ربيع الهشلمون</p>
+                            <p><strong>📅 الفصل الدراسي:</strong> ربيع 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Page -->
+                <div id="content" class="page-section">
+                    <div class="breadcrumb"><a href="file:///C:/Users/%D8%B2%D9%8A%D8%AF%D8%A7%D9%86/Desktop/index.html#" data-page="home">HOME</a> &gt; المحتوى</div>
+                    <h2 class="page-title">المحتوى</h2>
+                    <div class="outcomes">
+                        <strong>مخرجات التعلم (1):</strong> تطبيق مفتاح النظريات ومفاهيم الموضوعات<br>
+                         تطبيق موضوع التدريس والمعرفة لتدعيم تعلم الطلبة.
+                    </div>
+                    <div class="impression-title"><span>الانطباعات</span></div>
+                    <div class="impression-image">
+                        <img src="./الملف الإلكتروني - زيدان بوكمة النسخة النهائية 2_files/books-bookstore-book-reading-159711.jpeg" alt="كتب ومصادر تعليمية">
+                    </div>
+                    <div class="content-text">
+                        <h3>1- المحتوى:</h3>
+                        <p>إن المُحتوى هو الأساس الذي تقوم عليه العملية التعليمية التعلمية، والمُحتوى هو عبارة عن المفاهيم والمُصطلحات الإسلامية، والقيم والاتجاهات التي تُساهم في بناء الشخصية المسلمة المتوازنة. وفي تدريس مادة التربية الإسلامية للمرحلة الابتدائية، يكتسب المحتوى أهمية خاصة لأنه يشكل اللبنة الأولى في بناء الهوية الإسلامية للطفل. وهُناك ثلاثة واجبات تعكسُ المُحتوى بشكلٍ ملحوظ، وهي:</p>
+                        <h4>الفلسفة التربوية:</h4>
+                        <p>كتبتُ فلسفتي التربوية في بداية مسيرتي الأكاديمية في كلية التربية بجامعة قطر، وبيَّنتُ فيها رؤيتي الخاصة لمهنة معلم التربية الإسلامية. وقد أكدت فيها أن معلم التربية الإسلامية يحمل أمانة عظيمة، فهو لا يقتصر على تعليم الأحكام الشرعية فحسب، بل يمتد دوره ليكون مربياً للأجيال، وغارساً للقيم الإسلامية الأصيلة في نفوس الناشئة. إن تدريس التربية الإسلامية في المرحلة الابتدائية يتطلب مزيداً من الصبر والحكمة والرفق، لأن الطفل في هذه المرحلة يكون كالصفحة البيضاء التي يسهل تشكيلها والتأثير فيها. وقد ذكرت في فلسفتي التربوية أن المعلم الناجح هو الذي يجمع بين العلم الشرعي الرصين، والمهارات التربوية الحديثة، والقدرة على التواصل الفعال مع الأطفال بلغة يفهمونها. كما أكدت على أهمية القدوة الحسنة، فالطفل يتعلم من سلوك معلمه قبل أن يتعلم من كلامه. قال تعالى:</p>
+                        <div class="verse">﴿لَقَدْ كَانَ لَكُمْ فِي رَسُولِ اللَّهِ أُسْوَةٌ حَسَنَةٌ﴾ [الأحزاب: 21]</div>
+                        <h4>تحليل المحتوى:</h4>
+                        <p>في تحليل مُحتوى منهج التربية الإسلامية للصف الخامس الابتدائي، قمت بدراسة متأنية للمحتوى المقرر في الفصل الدراسي. وقد ركزت على ثلاثة مجالات رئيسية:</p>
+                        <p><strong>مجال القرآن الكريم:</strong> ويشمل تلاوة وتدبر سورة الصافات، وسورة المطففين، وسورة الليل. وقد قمت باستخراج المفاهيم الأساسية مثل: التوحيد، والعدل في الميزان، وجزاء المتقين، وعاقبة المطففين. كما حللت القيم التربوية المستنبطة من هذه السور، مثل: تنزيه الله تعالى عما لا يليق به، والصدق والأمانة في المعاملات، والإنفاق في سبيل الله.</p>
+                        <p><strong>مجال الحديث الشريف:</strong> ويشمل حديث "حق المسلم على المسلم". وقد قمت بتحليل هذا الحديث الشريف واستخراج الحقوق الخمسة المذكورة فيه: رد السلام، وعيادة المريض، واتباع الجنائز، وإجابة الدعوة، وتشميت العاطس. كما ربطت هذه الحقوق بواقع الطلاب المعاصر، وكيفية تطبيقها في حياتهم اليومية داخل المدرسة وخارجها.</p>
+                        <p><strong>مجال القيم والأخلاق:</strong> وقد استخلصت من المحتوى مجموعة من القيم الأساسية مثل: الأخوة الإسلامية، والتعاون، والتكافل الاجتماعي، والعدل، والصدق.</p>
+                        <p>فبعد تحليل المُحتوى استطعت أن أعرف الجوانب التي تحتاج إلى تركيز أكثر، وتمكنت من التخطيط للدروس بطريقة تحقق التكامل بين الجوانب المعرفية والوجدانية والمهارية.</p>
+                        <h4>تصميم الوحدة التعليمية:</h4>
+                        <p>في تصميم الوحدة التعليمية، قمتُ بالرجوع إلى مُحتوى كتاب التربية الإسلامية للصف الخامس بدولة قطر، وأعددت وحدة متكاملة بعنوان: <strong>"من هدي القرآن والسنة: قيم وأخلاق"</strong>. وقد صممت الوحدة بحيث تشمل:</p>
+                        <p><strong>المجال القرآني:</strong> تلاوة وتدبر سور: الصافات (الآيات المتعلقة بتنزيه الله)، والمطففين (الآيات المتعلقة بالعدل في الميزان)، والليل (الآيات المتعلقة بجزاء المتقين).</p>
+                        <p><strong>المجال الحديثي:</strong> شرح حديث «حق المسلم على المسلم» وتطبيقاته العملية.</p>
+                        <p><strong>الأهداف التعليمية:</strong> صغت أهدافاً معرفية (مثل: أن يتلو الطالب الآيات تلاوة صحيحة، أن يشرح معاني المفردات)، وأهدافاً وجدانية (مثل: أن يستشعر الطالب عظمة الله وقدرته، أن يقتنع بأهمية العدل في المعاملات)، وأهدافاً مهارية (مثل: أن يطبق الطالب حقوق المسلم في تعامله مع زملائه).</p>
+                        <p><strong>الوسائل التعليمية:</strong> وظفت وسائل تعليمية متنوعة مثل: المصحف المدرسي، والعروض التقديمية (PowerPoint)، ومنصة Nearpod للأنشطة التفاعلية والتقييم المرحلي، وبطاقات تعليمية للحقوق الخمسة.</p>
+                        <p><strong>الأنشطة الصفية واللاصفية:</strong> صممت أنشطة فردية وجماعية، مثل: تمثيل أدوار تطبيقية لحديث حقوق المسلم، ومسابقة في تلاوة الآيات، وبحث قصير عن معاني سورة المطففين.</p>
+                        <p>وقد حرصت في تصميم الوحدة على أن تكون شاملة لجميع جوانب التعلم، وأن تراعي الفروق الفردية بين الطلاب، وأن تكون الأنشطة ممتعة وجذابة لتلاميذ المرحلة الابتدائية.</p>
+                    </div>
+                    <div class="evidence-section">
+                        <div class="evidence-title">📎 الأدلة</div>
+                        <div class="evidence-title" style="font-size: 1em; color: #6c757d; margin-top: -5px;">File Attachments:</div>
+                        <ul class="file-list">
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/14z8kxvMLn-_hoVamjxFHgyA0103xgpdeV6aZjewRpOs/edit?usp=drivesdk&amp;ouid=115148739310575967138&amp;rtpof=true&amp;sd=true" target="_blank">تقرير فلسفتي التعليمية - زيدان بوكمة<span class="download-btn">تحميل</span></a></li>
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1VyY7MX9W66YQQrFqvFD7eKC4W5eGboNnqL6rn4nYf5c/edit?usp=sharing" target="_blank">تحليل نظرية وتطبيقاتها العملية<span class="download-btn">تحميل</span></a></li>
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1xslevt6GWtf494cxEkqOXt9qttjbG7C1M1m_EAnBteY/edit?usp=drivesdk&amp;ouid=115148739310575967138&amp;rtpof=true&amp;sd=true" target="_blank">تصميم الوحدة التعليمية النهائي - زيدان بوكمة<span class="download-btn">تحميل</span></a></li>
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1UVkHxRs3I6kHMuS0UhQx9p09m6-1HhC4/edit?usp=sharing&amp;ouid=113226872320025976872&amp;rtpof=true&amp;sd=true" target="_blank">تحليل المحتوى <span class="download-btn">تحميل</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Planning Page -->
+                <div id="planning" class="page-section">
+                    <div class="breadcrumb"><a href="file:///C:/Users/%D8%B2%D9%8A%D8%AF%D8%A7%D9%86/Desktop/index.html#" data-page="home">HOME</a> &gt;  أصول التدريس - التخطيط للدروس</div>
+                    <h2 class="page-title">أصول التدريس – التخطيط لدروس</h2>
+                    <div class="outcomes">
+                         استخدام التخطيط والتوجيه الفعال لتحقيق أقصى قدر من التعلم لدى الطلبة.<br>
+                         تطبيق المعرفة لدى الطلبة وكيفية تعلمهم لدعم تعلم الطلاب وتطويرهم.<br>
+                         أسس خبرات التعلم المرنة والمبتكرة لدى الأفراد ومجموعات الطلبة.
+                    </div>
+                    <div class="impression-title"><span>الانطباعات</span></div>
+                    <div class="impression-image">
+                        <img src="./الملف الإلكتروني - زيدان بوكمة النسخة النهائية 2_files/pexels-photo-590022.jpeg" alt="دفتر وقلم تخطيط">
+                    </div>
+                    <div class="content-text">
+                        <h3>2 - أصول التدريس – التخطيط للدروس:</h3>
+                        <h4>1- التخطيط للدروس:</h4>
+                        <p>إن التخطيط لدروس التربية الإسلامية في المرحلة الابتدائية يكتسب أهمية مضاعفة، نظراً لطبيعة المتعلم في هذه المرحلة العمرية. فالطفل في الصف الخامس يحتاج إلى تنويع في أساليب العرض، وإثارة مستمرة لدافعيته، وربط للمادة العلمية بواقعه المعيش. وقد حرصت في تخطيطي للدروس على:</p>
+                        <ul>
+                            <li><strong>تحديد الأهداف بوضوح:</strong> صغت أهدافاً قابلة للقياس والملاحظة، مثل: "أن يتلو الطالب الآيات من سورة المطففين تلاوة صحيحة خالية من الأخطاء الجسيمة".</li>
+                            <li><strong>التهيئة الحافزة:</strong> بدأت كل درس بموقف أو قصة أو سؤال يثير فضول الطلاب ويربطهم بموضوع الدرس. مثلاً: في درس سورة المطففين، سألت الطلاب: "ماذا تشعرون لو ذهبتم إلى البقالة واشترى أحدهم قبلكم ووجدتم أن صاحب البقالة ينقص الناس في الكيل؟".</li>
+                            <li><strong>عرض الدرس:</strong> قسمت الدرس إلى أجزاء صغيرة ليسهل استيعابها، مع استخدام الوسائل البصرية والسمعية.</li>
+                            <li><strong>التقويم:</strong> خططت لأسئلة تقويمية أثناء الدرس وفي نهايته للتأكد من تحقق الأهداف، واستخدمت منصة Nearpod لتقديم أسئلة تفاعلية ممتعة.</li>
+                            <li><strong>الواجب المنزلي:</strong> صممت واجبات منزلية بسيطة وهادفة، مثل: "اكتب موقفاً واحداً طبقت فيه حقاً من حقوق المسلم التي تعلمناها اليوم".</li>
+                        </ul>
+                    </div>
+                    <div class="evidence-section">
+                        <div class="evidence-title">📎 الأدلة</div>
+                        <div class="evidence-title" style="font-size: 1em; color: #6c757d; margin-top: -5px;">File Attachments:</div>
+                        <ul class="file-list">
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1Tpkr4i0ERkKlHwGdmzj7ADPp8GZlMeYpBENNPTblEVM/edit?usp=sharing" target="_blank">الخطة التربوية الفردية - تعديل السلوك - زيدان بوكمة<span class="download-btn">تحميل</span></a></li>
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1xslevt6GWtf494cxEkqOXt9qttjbG7C1M1m_EAnBteY/edit?usp=sharing" target="_blank">تصميم الوحدة الدراسية - زيدان بوكمة<span class="download-btn">تحميل</span></a></li>
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1ta5ySJvzygJXPQfvFCPSNnKdDjDZgz9DPLdA9JQ34Yw/edit?usp=sharing" target="_blank">خطة تحضير الدرس اليومي - زيدان بوكمة<span class="download-btn">تحميل</span></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Teaching Page -->
+                <div id="teaching" class="page-section">
+                    <div class="breadcrumb"><a href="file:///C:/Users/%D8%B2%D9%8A%D8%AF%D8%A7%D9%86/Desktop/index.html#" data-page="home">HOME</a> &gt; أصول التدريس – التدريس</div>
+                    <h2 class="page-title">أصول التدريس – التخطيط للبيئة التعليمية</h2>
+                    <div class="outcomes">
+                         استخدام التخطيط والتوجيه الفعال لتحقيق أقصى قدر من التعلم لدى الطلبة.<br>
+                         أسس خبرات التعلم المرنة والمبتكرة لدى الأفراد ومجموعات الطلبة.<br>
+                         استخدام خطط التدريس والمصادر لإشراك الطلبة بالتعلم الفعال.
+                    </div>
+                    <div class="impression-title"><span>الانطباعات</span></div>
+                    <div class="impression-image">
+                        <img src="./الملف الإلكتروني - زيدان بوكمة النسخة النهائية 2_files/pexels-photo-301926.jpeg" alt="سبورة وطباشير">
+                    </div>
+                    <div class="content-text">
+                        <h3>3- أصول التدريس – التخطيط للبيئة التعليمية:</h3>
+                        
+                        <h4>2- التخطيط للبيئة الصفية:</h4>
+                        <p>الإدارة الصفية في درس التربية الإسلامية للمرحلة الابتدائية تتطلب مزيجاً من الحزم والرفق. وقد خططت لبيئة صفية آمنة وداعمة من خلال:</p>
+                        <ul>
+                            <li><strong>تنظيم جلوس الطلاب:</strong> بطريقة تتيح الرؤية الواضحة للسبورة والشاشة، مع مراعاة وضع الطلاب الذين يحتاجون إلى متابعة دقيقة في المقدمة.</li>
+                            <li><strong>لوحة الشرف:</strong> خصصت ركناً في الصف لعرض أسماء الطلاب المتميزين في الحفظ والتلاوة والسلوك الإسلامي القويم، مما يشجع التنافس الإيجابي.</li>
+                            <li><strong>القوانين الصفية:</strong> وضعت بالتعاون مع الطلاب قوانين صفية بسيطة مستمدة من الآداب الإسلامية، مثل: "نرفع أيدينا قبل الكلام"، "نستمع لمن يتحدث"، "نحترم بعضنا البعض". وقد علقت هذه القوانين على جدار الصف بخط واضح وجميل.</li>
+                            <li><strong>تهيئة الجو الروحاني:</strong> حرصت على بدء الدرس بالبسملة والصلاة على النبي صلى الله عليه وسلم، وتعويد الطلاب على ترديد الأذكار، مما يخلق جواً إيمانياً يساعد على استيعاب دروس التربية الإسلامية.</li>
+                        </ul>
+                        <h4>3- التخطيط لضبط السلوك:</h4>
+                        <p>خلال فترة التدريب الميداني، واجهت تحدياً مع أحد الطلاب الذي كان كثير الحركة ويقاطع الدرس باستمرار. وبدلاً من استخدام أساليب العقاب القاسية، خططت للتعامل مع هذا السلوك بطريقة تربوية إيجابية:</p>
+                        <ul>
+                            <li><strong>التعزيز الإيجابي:</strong> كنت أثني على الطالب وأشيد به أمام زملائه في الأوقات التي يلتزم فيها بالهدوء.</li>
+                            <li><strong>المسؤولية:</strong> كلفته بمهام بسيطة أثناء الدرس، مثل توزيع الأوراق أو مساعدتي في تشغيل جهاز العرض، مما أشعره بأهميته وقلل من سلوكه السلبي.</li>
+                            <li><strong>التواصل مع ولي الأمر:</strong> تواصلت مع والد الطالب وأخبرته بإيجابيات ابنه أولاً، ثم ناقشنا سبل التعاون لتحسين سلوكه. وقد كان ولي الأمر متعاوناً جداً، وأدى ذلك إلى تحسن ملحوظ في سلوك الطالب.</li>
+                            <li><strong>الخطة السلوكية الفردية:</strong> قمت بتصميم خطة سلوكية بسيطة للطالب تتضمن أهدافاً أسبوعية ومكافآت رمزية عند تحقيقها.</li>
+                        </ul>
+                    </div>
+                    <div class="evidence-section">
+                        <div class="evidence-title">📎 الأدلة</div>
+                        <div class="evidence-title" style="font-size: 1em; color: #6c757d; margin-top: -5px;">File Attachments:</div>
+                        <ul class="file-list">
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1Tpkr4i0ERkKlHwGdmzj7ADPp8GZlMeYpBENNPTblEVM/edit?usp=sharing" target="_blank">الخطة التربوية الفردية<span class="download-btn">تحميل</span></a></li>
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1NX3Qy09UtpXvgS61qwOmEHMyO1TD4YHTDIoslWItZhA/edit?usp=sharing" target="_blank">خطة ادارة البيئة الصفية<span class="download-btn">تحميل</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Assessment Page -->
+                <div id="assessment" class="page-section">
+                    <div class="breadcrumb"><a href="file:///C:/Users/%D8%B2%D9%8A%D8%AF%D8%A7%D9%86/Desktop/index.html#" data-page="home">HOME</a> &gt; أصول التدريس – التقييم</div>
+                    <h2 class="page-title">أصول التدريس – التقييم</h2>
+                    <div class="outcomes">
+                         استخدام التخطيط والتوجيه الفعال لتحقيق أقصى قدر من التعلم لدى الطلبة.<br>
+                         تقييم ورفع تقارير حول تعلم الطلبة.
+                    </div>
+                    <div class="impression-title"><span>الانطباعات</span></div>
+                    <div class="impression-image">
+                        <img src="./الملف الإلكتروني - زيدان بوكمة النسخة النهائية 2_files/pexels-photo-590011.jpeg" alt="رسوم بيانية وتقارير">
+                    </div>
+                    <div class="content-text">
+                        <h3>4- التقييم:</h3>
+                        <p>يُعد التقييم عنصراً أساسياً في العملية التعليمية، وهو الوسيلة التي يقيس بها المعلم مدى تحقق الأهداف التعليمية. وفي تدريس التربية الإسلامية للمرحلة الابتدائية، ينبغي أن يكون التقييم متنوعاً وشاملاً لجميع جوانب التعلم: المعرفية، والوجدانية، والمهارية. وقد حرصت خلال تدريبي الميداني على تطبيق أنواع متعددة من التقييم، كان من أبرزها <strong>التقييم المرحلي باستخدام منصة Nearpod</strong>، وهو محور البحث الإجرائي الذي قمت به.</p>
+                        <h4>أولاً: التقييم القبلي (التشخيصي):</h4>
+                        <p>قبل البدء في تدريس الوحدة التعليمية، قمت بإجراء اختبار تشخيصي بسيط للطلاب لمعرفة خلفياتهم السابقة عن موضوعات الوحدة. تضمن الاختبار أسئلة مثل:</p>
+                        <ul>
+                            <li>من يستطيع أن يتلو سورة الفاتحة؟</li>
+                            <li>ماذا تعرف عن حقوق المسلم على أخيه المسلم؟</li>
+                            <li>ما معنى "التطفيف"؟</li>
+                        </ul>
+                        <p>وقد ساعدتني نتائج هذا الاختبار في تحديد مستويات الطلاب، ومعرفة نقاط القوة والضعف لديهم، وبالتالي تمكنت من تعديل خطتي التدريسية بما يتناسب مع احتياجاتهم الفعلية.</p>
+                        <h4>ثانياً: التقييم البنائي (المرحلي):</h4>
+                        <p>وهو محور اهتمامي في البحث الإجرائي. فقد قمت بتوظيف <strong>منصة Nearpod</strong> لإجراء تقييم مرحلي أثناء سير الدرس. وتتميز هذه المنصة بعدة مزايا:</p>
+                        <ul>
+                            <li><strong>التفاعل الفوري:</strong> أستطيع طرح سؤال على جميع الطلاب في نفس الوقت، واستقبال إجاباتهم فوراً.</li>
+                            <li><strong>تنوع الأسئلة:</strong> المنصة تدعم أنواعاً متعددة من الأسئلة: اختيار من متعدد، صح وخطأ، أسئلة مفتوحة، رسم، سحابة كلمات.</li>
+                            <li><strong>مشاركة جميع الطلاب:</strong> حتى الطلاب الخجولين أو ضعيفي المستوى يشاركون بفاعلية لأن الإجابات تظهر بدون أسمائهم (يمكن إظهارها لاحقاً).</li>
+                            <li><strong>التغذية الراجعة الفورية:</strong> أستطيع مناقشة الإجابات الصحيحة والخاطئة مباشرة، وتوضيح نقاط الالتباس.</li>
+                            <li><strong>توفير البيانات:</strong> المنصة تحفظ جميع إجابات الطلاب، مما يمكنني من تحليل أدائهم لاحقاً وتحديد الطلاب الذين يحتاجون إلى دعم إضافي.</li>
+                        </ul>
+                        <p>وقد لاحظت من خلال تطبيقي لهذه الاستراتيجية أن الطلاب أصبحوا أكثر تفاعلاً ومشاركة، وأن فهمهم للدرس تحسن بشكل ملحوظ. كما أن بيانات التقييم المرحلي ساعدتني في تعديل شرح أثناء الدرس نفسه؛ فعندما ألاحظ أن نسبة كبيرة من الطلاب أخطأوا في سؤال معين، أعيد شرح تلك الجزئية بطريقة مختلفة.</p>
+                        <h4>ثالثاً: التقييم الختامي:</h4>
+                        <p>في نهاية الوحدة التعليمية، قمت بإجراء اختبار ختامي شامل يقيس مدى تحقق الأهداف التعليمية. وقد تضمن الاختبار:</p>
+                        <ul>
+                            <li><strong>أسئلة موضوعية:</strong> اختيار من متعدد، صح وخطأ، املأ الفراغ.</li>
+                            <li><strong>أسئلة مقالية قصيرة:</strong> اشرح معنى كلمة "سجين"، اذكر ثلاثة من حقوق المسلم.</li>
+                            <li><strong>اختبار تلاوة شفوي:</strong> يقرأ كل طالب آية أو آيتين من السور المقررة، وأقوم بتقييم تلاوته.</li>
+                        </ul>
+                        <h4>رابعاً: تقويم الجانب الوجداني والسلوكي:</h4>
+                        <p>استخدمت <strong>بطاقة ملاحظة</strong> لتقييم سلوك الطلاب والتزامهم بالقيم الإسلامية داخل الصف وخارجه. ومن المؤشرات التي كنت ألاحظها:</p>
+                        <ul>
+                            <li>التزام الطالب بالهدوء والاستماع أثناء الدرس.</li>
+                            <li>تعامله مع زملائه باحترام ولطف.</li>
+                            <li>تطبيقه لحقوق المسلم (مثل: رد السلام، تشميت العاطس).</li>
+                            <li>مشاركته في الأنشطة الصفية.</li>
+                        </ul>
+                        <p>وقد قمت بتحليل نتائج جميع أنواع التقييم، وتبين لي أن الطلاب الذين شاركوا بفاعلية في أنشطة Nearpod التفاعلية حققوا نتائج أفضل في الاختبار الختامي، مما يؤكد أثر استخدام المنصة في تحسين التعلم.</p>
+                    </div>
+                    <div class="evidence-section">
+                        <div class="evidence-title">📎 الأدلة</div>
+                        <div class="evidence-title" style="font-size: 1em; color: #6c757d; margin-top: -5px;">File Attachments:</div>
+                        <ul class="file-list">
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1NX3Qy09UtpXvgS61qwOmEHMyO1TD4YHTDIoslWItZhA/edit?usp=sharing" target="_blank">الملاحظات الصفية<span class="download-btn">تحميل</span></a></li>
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1fECIux6I7m6st-kbN3-MYfemqV5vc74_UltAFDn3gEs/edit?usp=drivesdk&amp;ouid=115148739310575967138&amp;rtpof=true&amp;sd=true" target="_blank">تحليل التقييم<span class="download-btn">تحميل</span></a></li>
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1lYJZVief8xUQEaUn163-EVVHSQ7HMkuHifEHJ01bi6s/edit?usp=sharing" target="_blank">بناء الاختبار<span class="download-btn">تحميل</span></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Technology Page -->
+                <div id="technology" class="page-section">
+                    <div class="breadcrumb"><a href="file:///C:/Users/%D8%B2%D9%8A%D8%AF%D8%A7%D9%86/Desktop/index.html#" data-page="home">HOME</a> &gt; التكنولوجيا</div>
+                    <h2 class="page-title">التكنولوجيا</h2>
+                    <div class="outcomes">
+                         استخدام التكنولوجيا المتوفرة بطرق قوية.<br>
+                         بناء خبرات تعلم مرتبطة بالبيئة خارج المدرسة.<br>
+                         تطبيق وسائل الاتصال المعلوماتية والتكنولوجيا في إدارة تعلم الطلبة.
+                    </div>
+                    <div class="impression-title"><span>الانطباعات</span></div>
+                    <div class="impression-image">
+                        <img src="./الملف الإلكتروني - زيدان بوكمة النسخة النهائية 2_files/pexels-photo-1181244.jpeg" alt="جهاز لوحي وقلم">
+                    </div>
+                    <div class="content-text">
+                        <h3>5- التكنولوجيا:</h3>
+                        <p>في عصرنا الحالي، لم تعد التكنولوجيا ترفاً تعليمياً، بل أصبحت ضرورة ملحة لمواكبة تطلعات المتعلمين من الجيل الرقمي. وقد حرصت خلال فترة التدريب الميداني على توظيف التكنولوجيا بشكل فاعل في تدريس مادة التربية الإسلامية للمرحلة الابتدائية.</p>
+                        <h4>أولاً: منصة Nearpod:</h4>
+                        <p>كانت منصة Nearpod محور تجربتي في توظيف التكنولوجيا. وقد استخدمتها في:</p>
+                        <ul>
+                            <li><strong>تقديم الدروس:</strong> قمت بتحويل دروس الوحدة التعليمية إلى عروض تقديمية تفاعلية على المنصة، تحتوي على شرائح للمحتوى، وصور، ومقاطع فيديو، وأسئلة تقييمية متنوعة.</li>
+                            <li><strong>التقييم المرحلي:</strong> استخدمت أسئلة المنصة المتنوعة لقياس مدى فهم الطلاب أثناء الدرس.</li>
+                            <li><strong>الواجبات المنزلية:</strong> أرسلت للطلاب "كود" الدرس ليتمكنوا من مراجعته في المنزل مع أولياء أمورهم.</li>
+                            <li><strong>التعلم الذاتي:</strong> شجعت الطلاب على استكشاف الدروس بأنفسهم بالسرعة التي تناسبهم.</li>
+                        </ul>
+                        <p><strong>فوائد استخدام Nearpod:</strong></p>
+                        <ul>
+                            <li>جعلت دروس التربية الإسلامية أكثر متعة وتشويقاً.</li>
+                            <li>زادت من مشاركة الطلاب وتفاعلهم، حتى الطلاب الخجولين.</li>
+                            <li>وفرت لي بيانات دقيقة عن أداء كل طالب، مما ساعدني في تقديم الدعم المناسب.</li>
+                            <li>سهلت التواصل مع أولياء الأمور وإشراكهم في تعلم أبنائهم.</li>
+                        </ul>
+                        <h4>ثانياً: التطبيقات والمواقع الإلكترونية الأخرى:</h4>
+                        <ul>
+                            <li><strong>المصحف الإلكتروني:</strong> استخدمت تطبيق "آيات" لعرض الآيات القرآنية مع تفسيرها وأحكام تجويدها. كما استمعنا إلى تلاوات لمشاهير القراء ليتعلم الطلاب أحكام التجويد بالمحاكاة.</li>
+                            <li><strong>موقع Quran.com:</strong> لعرض الآيات بخط واضح وجميل، مع إمكانية الاستماع للتلاوة.</li>
+                            <li><strong>منصة Wordwall:</strong> لتصميم ألعاب تعليمية تفاعلية، مثل: لعبة "المطابقة" لربط الكلمة بمعناها، ولعبة "الطائرة" لاختبار سرعة البديهة في المعلومات الدينية.</li>
+                            <li><strong>منصة Quizizz:</strong> لإجراء مسابقات سريعة في نهاية الدرس، مما أضفى جواً من المرح والمنافسة الإيجابية.</li>
+                        </ul>
+                        <h4>ثالثاً: التواصل مع أولياء الأمور:</h4>
+                        <p>استخدمت <strong>مجموعة واتسآب</strong> للتواصل مع أولياء أمور الطلاب. كنت أرسل لهم:</p>
+                        <ul>
+                            <li>ملخصاً أسبوعياً لما تم تدريسه.</li>
+                            <li>"كود" دروس Nearpod لمراجعتها في المنزل.</li>
+                            <li>إشعارات بأداء أبنائهم وإنجازاتهم.</li>
+                            <li>نصائح تربوية لتعزيز القيم الإسلامية في المنزل.</li>
+                        </ul>
+                        <p>وقد كان هذا التواصل فعالاً جداً، وأدى إلى تعاون مثمر بين البيت والمدرسة.</p>
+                        <h4>رابعاً: إنتاج محتوى رقمي:</h4>
+                        <p>قمت بتصميم عروض تقديمية باستخدام <strong>PowerPoint</strong> و <strong>Canva</strong>، تحتوي على:</p>
+                        <ul>
+                            <li>الآيات القرآنية بخط واضح وجميل.</li>
+                            <li>صور توضيحية لمعاني الكلمات.</li>
+                            <li>خرائط ذهنية لتلخيص الدروس.</li>
+                            <li>أسئلة تقويمية.</li>
+                        </ul>
+                    </div>
+                    <div class="evidence-section">
+                        <div class="evidence-title">📎 الأدلة</div>
+                        
+                        
+                        <div class="evidence-title" style="font-size: 1em; color: #6c757d; margin-top: 15px;">File Attachments:</div>
+                        <ul class="file-list">
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1HVSQE0foEcOUaPfo73RTnwYFLbpADoC48MxOdouch9I/edit?usp=sharing" target="_blank">الويب كويست<span class="download-btn">تحميل</span></a></li>
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1DwlERg_WNwW2AScPuhpRes-NEratGXgF6E5dpK8Ij6M/edit?usp=sharing" target="_blank">درس تكنولوجي<span class="download-btn">تحميل</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Diversity Page -->
+                <div id="diversity" class="page-section">
+                    <div class="breadcrumb"><a href="file:///C:/Users/%D8%B2%D9%8A%D8%AF%D8%A7%D9%86/Desktop/index.html#" data-page="home">HOME</a> &gt; التنوع</div>
+                    <h2 class="page-title">التنوع</h2>
+                    <div class="outcomes">
+                         تعزيز خبرات تعلم ناجحة لدى جميع الطلبة من خلال إدارة الفروقات الفردية.<br>
+                         خلق بيئة تعليمية آمنة وداعمة ومليئة بالتحديات.
+                    </div>
+                    <div class="impression-title"><span>الانطباعات</span></div>
+                    <div class="impression-image">
+                        <img src="file:///C:/Users/%D8%B2%D9%8A%D8%AF%D8%A7%D9%86/Desktop/%D8%A7%D9%84%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%20-%20%D8%B2%D9%8A%D8%AF%D8%A7%D9%86%20%D8%A8%D9%88%D9%83%D9%85%D8%A9%20v3.0_files/library-la-pluie-bookcase-159775.jpeg" alt="أرفف كتب متنوعة">
+                    </div>
+                    <div class="content-text">
+                        <h3>6- التنوع:</h3>
+                        <p>خلق الله تعالى البشر مختلفين في قدراتهم واستعداداتهم وطرق تعلمهم، وهذه سنة من سننه في خلقه. قال تعالى:</p>
+                        <div class="verse">﴿وَمِنْ آيَاتِهِ خَلْقُ السَّمَاوَاتِ وَالْأَرْضِ وَاخْتِلَافُ أَلْسِنَتِكُمْ وَأَلْوَانِكُمْ إِنَّ فِي ذَلِكَ لَآيَاتٍ لِلْعَالِمِينَ﴾ [الروم: 22]</div>
+                        <p>وقد حرصت خلال تدريبي الميداني على مراعاة التنوع بين الطلاب، وتلبية احتياجاتهم المختلفة.</p>
+                        <h4>أولاً: مراعاة الفروق في مهارة التلاوة والحفظ:</h4>
+                        <p>لاحظت تفاوتاً كبيراً بين الطلاب في مهارة تلاوة القرآن الكريم. فهناك طلاب يجيدون التلاوة ويحفظون بسرعة، وآخرون يعانون من صعوبات في النطق أو التجويد. ولتلبية احتياجات الجميع:</p>
+                        <ul>
+                            <li><strong>للطلاب المتميزين:</strong> كلفتهم بحفظ مقادير إضافية، وأشركتهم في مساعدة زملائهم (التعلم بالتعليم).</li>
+                            <li><strong>للطلاب المتوسطين:</strong> ركزت على تحقيق الحد الأدنى من أهداف الحفظ والتلاوة.</li>
+                            <li><strong>للطلاب الضعاف:</strong> خصصت لهم وقتاً إضافياً، واتبعت معهم أسلوب التكرار والتجزئة (تقسيم الآية إلى مقاطع صغيرة)، وربطت المعاني بالألفاظ لتسهيل الحفظ.</li>
+                        </ul>
+                        <h4>ثانياً: مراعاة أنماط التعلم المختلفة (الذكاءات المتعددة):</h4>
+                        <p>نوعت في استراتيجياتي وأنشطتي لتلائم أنماط التعلم المختلفة:</p>
+                        <ul>
+                            <li><strong>الذكاء اللغوي:</strong> من خلال التلاوة، والمناقشة، وكتابة التفسير المبسط.</li>
+                            <li><strong>الذكاء البصري:</strong> من خلال الصور، والرسوم التوضيحية، والعروض التقديمية، والخرائط الذهنية.</li>
+                            <li><strong>الذكاء السمعي:</strong> من خلال الاستماع إلى التلاوات، والقصص، والأناشيد الإسلامية.</li>
+                            <li><strong>الذكاء الحركي:</strong> من خلال لعب الأدوار، والأنشطة اليدوية (مثل رسم لوحة تعبر عن معاني الآيات).</li>
+                            <li><strong>الذكاء الاجتماعي:</strong> من خلال التعلم التعاوني، والمناقشات الجماعية.</li>
+                            <li><strong>الذكاء الشخصي (التأملي):</strong> من خلال أسئلة التفكر والتدبر، والربط بحياة الطالب الشخصية.</li>
+                        </ul>
+                        <h4>ثالثاً: تصميم الوحدة التعليمية والأنشطة:</h4>
+                        <p>عند تصميمي للوحدة التعليمية، حرصت على تضمين أنشطة متنوعة تناسب مختلف المستويات والاهتمامات. فمن الأنشطة:</p>
+                        <ul>
+                            <li><strong>أنشطة أساسية:</strong> يجب على جميع الطلاب إنجازها.</li>
+                            <li><strong>أنشطة إثرائية:</strong> للطلاب الذين ينهون أعمالهم بسرعة ويرغبون في المزيد من التحدي.</li>
+                            <li><strong>أنشطة داعمة:</strong> للطلاب الذين يحتاجون إلى مزيد من الوقت والمساعدة.</li>
+                        </ul>
+                        <h4>رابعاً: بيئة صفية شاملة:</h4>
+                        <p>حرصت على خلق بيئة صفية يشعر فيها كل طالب بالأمان والتقدير، بغض النظر عن مستواه الأكاديمي أو خلفيته الاجتماعية. كنت أؤكد دائماً على قيمة كل طالب، وأثني على جهوده، وأشجع روح التعاون وليس التنافس السلبي.</p>
+                    </div>
+                    <div class="evidence-section">
+                        <div class="evidence-title">📎 الأدلة</div>
+                        <div class="evidence-title" style="font-size: 1em; color: #6c757d; margin-top: -5px;">File Attachments:</div>
+                        <ul class="file-list">
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1NX3Qy09UtpXvgS61qwOmEHMyO1TD4YHTDIoslWItZhA/edit?usp=sharing" target="_blank">البيئة الصفية<span class="download-btn">تحميل</span></a></li>
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1xslevt6GWtf494cxEkqOXt9qttjbG7C1M1m_EAnBteY/edit?usp=sharing" target="_blank">تصميم الوحدة<span class="download-btn">تحميل</span></a></li>
+
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1pUb0frqbXl3y8ptgy_cVxV-es4Otr6LM489G5Rpw9Oo/edit?usp=sharing" target="_blank">صحف التفكر<span class="download-btn">تحميل</span></a></li>
+         
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1Auoh8kaTPctpu0WiKLpsdA5beGSJ8CQv9S3KrqODmjA/edit?usp=sharing" target="_blank">البحث الاجرائي<span class="download-btn">تحميل</span></a></li>
+                     
+
+            </ul>
+                    </div>
+                </div>
+
+                <!-- Problem Solving Page -->
+                <div id="problemsolving" class="page-section">
+                    <div class="breadcrumb"><a href="file:///C:/Users/%D8%B2%D9%8A%D8%AF%D8%A7%D9%86/Desktop/index.html#" data-page="home">HOME</a> &gt; حل المشكلات</div>
+                    <h2 class="page-title">حل المشكلات</h2>
+                    <div class="outcomes">
+                         دراسة مجموعة متنوعة من العوامل والمصادر بشكل ممنهج للوصول إلى قرارات البيانات المتخذة.<br>
+                         تقييم وتطوير الممارسات المهنية بالإضافة إلى ترك انطباعك حوله.
+                    </div>
+                    <div class="impression-title"><span>الانطباعات</span></div>
+                    <div class="impression-image">
+                        <img src="./الملف الإلكتروني - زيدان بوكمة النسخة النهائية 2_files/pexels-photo-355948.jpeg" alt="مصباح فكرة">
+                    </div>
+                    <div class="content-text">
+                        <h3>7- حل المشكلات:</h3>
+                        <p>خلال فترة التدريب الميداني، واجهت تحدياً تمثل في: <strong>ضعف مشاركة الطلاب وتفاعلهم أثناء دروس التربية الإسلامية، وخاصة في حصص التلاوة والتجويد.</strong> لاحظت أن عدداً من الطلاب يشعرون بالملل، ولا يشاركون بفاعلية، ويعتمدون على زملائهم المتميزين في الإجابة. ولحل هذه المشكلة، لجأت إلى منهجية البحث الإجرائي.</p>
+                        <h4>خطوات البحث الإجرائي:</h4>
+                        <ol>
+                            <li><strong>تحديد المشكلة وتشخيصها:</strong> لاحظت أن تفاعل الطلاب في الدروس التقليدية كان محدوداً. أجريت استبانة بسيطة للطلاب لمعرفة أسباب ضعف المشاركة، وكان من أبرز الأسباب: الخجل، الخوف من الخطأ، الشعور بالملل من طريقة الشرح التقليدية.</li>
+                            <li><strong>مراجعة الأدبيات والدراسات السابقة:</strong> اطلعت على دراسات وبحوث تناولت توظيف التكنولوجيا في التدريس، وأثرها في زيادة دافعية الطلاب ومشاركتهم. وجدت أن منصة Nearpod توصف بأنها أداة فعالة لزيادة التفاعل والمشاركة، وتوفير التغذية الراجعة الفورية.</li>
+                            <li><strong>تطبيق الحل المقترح:</strong> قمت بتوظيف منصة Nearpod في التقييم المرحلي أثناء تدريس وحدة "من هدي القرآن والسنة". صممت دروساً تفاعلية على المنصة تتضمن أسئلة متنوعة بعد كل جزء من الدرس. شجعت جميع الطلاب على المشاركة، وأكدت لهم أن أسماءهم لن تظهر إلا بعد موافقتهم.</li>
+                            <li><strong>جمع البيانات وتحليلها:</strong> قارنت نتائج التقييم المرحلي (باستخدام Nearpod) بنتائج التقييم التقليدي. حللت بيانات المشاركة: عدد الطلاب المشاركين، نسبة الإجابات الصحيحة. لاحظت زيادة كبيرة في عدد الطلاب المشاركين (من حوالي 40% إلى أكثر من 90%). لاحظت تحسناً في فهم الطلاب للدرس، حيث ارتفعت نسبة الإجابات الصحيحة في أسئلة التقييم المرحلي.</li>
+                            <li><strong>النتائج والتوصيات:</strong> أثبتت نتائج البحث الإجرائي أن استخدام منصة Nearpod في التقييم المرحلي كان له أثر إيجابي كبير في زيادة مشاركة الطلاب وتفاعلهم وتحسين فهمهم. أوصيت باستمرار توظيف هذه المنصة في تدريس مواد التربية الإسلامية، وتعميم التجربة على زملائي المعلمين.</li>
+                        </ol>
+                        <h4>حل المشكلات السلوكية:</h4>
+                        <p>كما ذكرت سابقاً، واجهت مشكلة سلوكية مع طالب كثير الحركة. وقد قمت بحلها من خلال: التعزيز الإيجابي، تكليفه بمسؤوليات، التواصل مع ولي الأمر، وتصميم خطة سلوكية فردية. وقد أثمرت هذه الاستراتيجيات في تحسين سلوك الطالب بشكل ملحوظ خلال فترة التدريب.</p>
+                    </div>
+                    <div class="evidence-section">
+                        <div class="evidence-title">📎 الأدلة</div>
+                        <div class="evidence-title" style="font-size: 1em; color: #6c757d; margin-top: -5px;">File Attachments:</div>
+                        <ul class="file-list">
+                            <li><span class="file-icon">📄</span> <a href="https://drive.google.com/file/d/1HUywyY41L5NYb1zQ8ulunLeCnAnYG9G_/view?usp=sharing" target="_blank">البحث الاجرائي - اثر استخدام منصة Nearpod<span class="download-btn">تحميل</span></a></li>
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1Auoh8kaTPctpu0WiKLpsdA5beGSJ8CQv9S3KrqODmjA/edit?usp=sharing" target="_blank">البحث الاجرائي<span class="download-btn">تحميل</span></a></li>
+                            <li><span class="file-icon">📄</span> <a href="https://drive.google.com/file/d/1iNfMAwaO7-vytmJ_OisCjUT7OTHo6Aoz/view?usp=sharing" target="_blank">تقرير لقاء ولي الأمر<span class="download-btn">تحميل</span></a></li>
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/10NegjHnkQ0an31it2HavV07jQhxVEz36-DfVWaoQLZk/edit?usp=sharing" target="_blank">ورقة نقدية<span class="download-btn">تحميل</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Research Page -->
+                <div id="research" class="page-section">
+                    <div class="breadcrumb"><a href="file:///C:/Users/%D8%B2%D9%8A%D8%AF%D8%A7%D9%86/Desktop/index.html#" data-page="home">HOME</a> &gt; النشاط العلمي</div>
+                    <h2 class="page-title">النشاط العلمي</h2>
+                    <div class="outcomes">
+                         الانخراط بفعالية بمنح دراسية من خلال التعلم والمساهمة بالأسس المعرفية في التعليم.<br>
+                         تقييم وتطوير الممارسات المهنية بالإضافة إلى ترك انطباعك حوله.
+                    </div>
+                    <div class="impression-title"><span>الانطباعات</span></div>
+                    <div class="impression-image">
+                        <img src="./الملف الإلكتروني - زيدان بوكمة النسخة النهائية 2_files/pexels-photo-256417.jpeg" alt="مجهر وكتب">
+                    </div>
+                    <div class="content-text">
+                        <h3>8- الاستقصاء البحثي:</h3>
+                        <p>إن إلمام المعلم بمناهج البحث العلمي يمكنه من التعامل مع المشكلات التربوية بطريقة منهجية، ويساعده على تطوير ممارساته المهنية بناءً على الأدلة والبراهين. وقد قمت خلال مسيرتي الأكاديمية والميدانية بإعداد عدة أنواع من البحوث:</p>
+                        <h4>1- البحث الإجرائي:</h4>
+                        <p>وهو أهم إنجاز بحثي لي في هذا المقرر. عنوان البحث: <strong>"أثر استخدام منصة Nearpod في التقييم المرحلي أثناء تدريس مادة التربية الإسلامية للمرحلة الابتدائية"</strong>. وقد اتبعت فيه خطوات البحث الإجرائي العلمية، وتوصلت إلى نتائج مهمة تؤكد فاعلية توظيف التكنولوجيا في زيادة تفاعل الطلاب وتحسين تعلمهم. وقد تم عرض تفاصيل هذا البحث في قسم "حل المشكلات" وفي الأدلة المرفقة.</p>
+                        <h4>2- دراسة حالة:</h4>
+                        <p>خلال التدريب الميداني، لاحظت طالباً في الصف الخامس يعاني من صعوبة بالغة في حفظ آيات القرآن الكريم، على الرغم من تفوقه في المواد الأخرى. فقمت بدراسة حالته من خلال:</p>
+                        <ul>
+                            <li><strong>المقابلة:</strong> تحدثت مع الطالب لمعرفة الصعوبات التي تواجهه. قال إنه يجد صعوبة في تذكر ترتيب الآيات، وينسى بسرعة.</li>
+                            <li><strong>الملاحظة:</strong> لاحظت أنه لا يستخدم أي استراتيجيات للحفظ، بل يقرأ الآيات قراءة عابرة فقط.</li>
+                            <li><strong>مراجعة السجلات:</strong> راجعت سجلاته الدراسية السابقة، فوجدت أن ضعفه في الحفظ مستمر منذ الصف الثالث.</li>
+                            <li><strong>الخطة العلاجية:</strong> صممت له خطة علاجية فردية تتضمن: تقسيم السورة إلى مقاطع قصيرة، التكرار المتباعد، الربط بالمعاني، الاستماع إلى التلاوة يومياً، المكافأة عند الإنجاز.</li>
+                            <li><strong>النتيجة:</strong> بعد شهر من تطبيق الخطة، تحسن مستوى الطالب في الحفظ بشكل ملحوظ، وازدادت ثقته بنفسه.</li>
+                        </ul>
+                        <h4>3- نقد دراسة سابقة:</h4>
+                        <p>في إطار تطوير مهاراتي البحثية، قمت بتحليل ونقد دراسة بحثية منشورة في إحدى المجلات التربوية المحكمة بعنوان: <strong>"فاعلية استخدام القصة الرقمية في تنمية القيم الأخلاقية لدى طلاب المرحلة الابتدائية"</strong>. وقد ناقشت الدراسة من حيث:</p>
+                        <ul>
+                            <li><strong>المقدمة والإطار النظري:</strong> هل عرضت الدراسة خلفية نظرية كافية؟</li>
+                            <li><strong>المنهجية:</strong> هل المنهج المستخدم مناسب لأسئلة البحث؟</li>
+                            <li><strong>العينة:</strong> هل حجم العينة كافٍ؟ هل تم اختيارها بطريقة علمية؟</li>
+                            <li><strong>الأدوات:</strong> هل أدوات البحث صادقة وثابتة؟</li>
+                            <li><strong>النتائج:</strong> هل النتائج معروضة بوضوح؟ هل تدعمها البيانات؟</li>
+                            <li><strong>التوصيات:</strong> هل التوصيات واقعية وقابلة للتطبيق؟</li>
+                        </ul>
+                        <p>وقد استفدت من هذا التمرين في تطوير قدرتي على قراءة البحوث التربوية قراءة ناقدة، والتمييز بين البحوث الجيدة والبحوث الضعيفة.</p>
+                    </div>
+                    <div class="evidence-section">
+                        <div class="evidence-title">📎 الأدلة</div>
+                        <div class="evidence-title" style="font-size: 1em; color: #6c757d; margin-top: -5px;">File Attachments:</div>
+                        <ul class="file-list">
+                            <li><span class="file-icon">📄</span> <a href="https://drive.google.com/file/d/1HUywyY41L5NYb1zQ8ulunLeCnAnYG9G_/view?usp=sharing" target="_blank">البحث الإجرائي - أثر استخدام منصة Nearpod<span class="download-btn">تحميل</span></a></li>
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/14rPrGFMpLZ-C5L3BEVee4qYV7xxsT9L7X737vRd76hk/edit?usp=sharing" target="_blank">دراسة الحالة - بحث عن اعاقة السمع<span class="download-btn">تحميل</span></a></li>
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/10NegjHnkQ0an31it2HavV07jQhxVEz36-DfVWaoQLZk/edit?usp=sharing" target="_blank">واجب تحليل دراسة ونقدها - عرض نقدي تحليلي<span class="download-btn">تحميل</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Ethics Page -->
+                <div id="ethics" class="page-section">
+                    <div class="breadcrumb"><a href="file:///C:/Users/%D8%B2%D9%8A%D8%AF%D8%A7%D9%86/Desktop/index.html#" data-page="home">HOME</a> &gt; الأخلاقيات المهنية</div>
+                    <h2 class="page-title">الأخلاقيات المهنية</h2>
+                    <div class="outcomes">
+                         تطبيق الأخلاقيات المهنية في السياقات التعليمية.<br>
+                         تقييم وتطوير الممارسات المهنية بالإضافة إلى ترك انطباعك حوله.
+                    </div>
+                    <div class="impression-title"><span>الانطباعات</span></div>
+                    <div class="impression-image">
+                        <img src="./الملف الإلكتروني - زيدان بوكمة النسخة النهائية 2_files/pexels-photo-1329571.jpeg" alt="ميزان العدل">
+                    </div>
+                    <div class="content-text">
+                        <h3>9- القيم الأخلاقية:</h3>
+                        <p>مهنة التعليم من أشرف المهن، فهي مهنة الأنبياء والمرسلين عليهم الصلاة والسلام. ومعلم التربية الإسلامية يحمل أمانة عظيمة، فهو مسؤول عن تعليم الطلاب كتاب الله وسنة رسوله، وعن غرس القيم الإسلامية في نفوسهم. ولذلك، فإن الالتزام بأخلاقيات المهنة يُعد واجباً دينياً وأخلاقياً ومهنياً.</p>
+                        <h4>أولاً: الأمانة العلمية والصدق:</h4>
+                        <ul>
+                            <li><strong>في التدريس:</strong> حرصت على أن أقدم للطلاب معلومات صحيحة ودقيقة، وأن أرجع إلى المصادر الموثوقة (القرآن الكريم، كتب التفسير المعتمدة، كتب الحديث الصحيحة). إذا سألني طالب عن مسألة لا أعرفها، كنت أقول له بكل أمانة: "سأبحث عن الإجابة وأخبرك في الدرس القادم"، وهذا يعلمه التواضع وطلب العلم.</li>
+                            <li><strong>في التقييم:</strong> تعاملت بكل عدل وموضوعية عند تقييم الطلاب، دون محاباة أو تحيز. قيمت أداءهم بناءً على معايير واضحة ومعلنة.</li>
+                            <li><strong>في البحث:</strong> التزمت بالأمانة العلمية في إعداد البحث الإجرائي، ونسبت كل فكرة وكل معلومة إلى مصدرها.</li>
+                        </ul>
+                        <h4>ثانياً: القدوة الحسنة:</h4>
+                        <p>أدركت أن الطلاب يراقبون سلوكي قبل أن يستمعوا إلى كلامي. لذلك، حرصت على أن أكون قدوة حسنة لهم في:</p>
+                        <ul>
+                            <li><strong>المظهر:</strong> الالتزام بالزي المحتشم والهندام المرتب.</li>
+                            <li><strong>السلوك:</strong> الصدق، والأمانة، والرفق، والصبر، والحلم، وضبط النفس.</li>
+                            <li><strong>العبادة:</strong> المحافظة على الصلاة في وقتها، والحرص على الأذكار.</li>
+                            <li><strong>العلاقات:</strong> التعامل باحترام مع الزملاء والإدارة وأولياء الأمور.</li>
+                        </ul>
+                        <h4>ثالثاً: العدل والمساواة:</h4>
+                        <p>تعاملت مع جميع الطلاب بعدل ومساواة، دون تفرقة بسبب المستوى الأكاديمي أو الوضع الاجتماعي. كنت أمنح جميع الطلاب فرصاً متكافئة للمشاركة والتعلم، وأشجعهم جميعاً على بذل أقصى جهدهم.</p>
+                        <h4>رابعاً: احترام خصوصية الطلاب وسريتهم:</h4>
+                        <ul>
+                            <li><strong>الملفات:</strong> حافظت على سرية ملفات الطلاب ومعلوماتهم الشخصية.</li>
+                            <li><strong>المشكلات:</strong> عند مناقشة مشكلة سلوكية لطالب مع ولي أمره، كنت أفعل ذلك في خصوصية تامة، ولا أتحدث عن مشكلات الطلاب أمام زملائهم أو أمام معلمين آخرين لا علاقة لهم بالموضوع.</li>
+                            <li><strong>البحث الإجرائي:</strong> عند جمع البيانات من الطلاب، أوضحت لهم أن مشاركتهم طوعية، وأن معلوماتهم ستعامل بسرية تامة، ولن تستخدم إلا لأغراض البحث العلمي.</li>
+                        </ul>
+                        <h4>خامساً: التأمل الذاتي والتطوير المستمر (صحيفة التفكر):</h4>
+                        <p>خلال فترة التدريب الميداني، كنت أدون في نهاية كل أسبوع <strong>صحيفة تفكر</strong> أسجل فيها:</p>
+                        <ul>
+                            <li>ما هي أبرز نجاحاتي هذا الأسبوع؟</li>
+                            <li>ما هي التحديات التي واجهتني؟</li>
+                            <li>كيف تعاملت مع هذه التحديات؟</li>
+                            <li>ماذا تعلمت هذا الأسبوع؟</li>
+                            <li>ما هي خطتي للتطوير في الأسبوع القادم؟</li>
+                        </ul>
+                        <p>وقد ساعدتني هذه الصحيفة على مراقبة أدائي، وتحديد نقاط قوتي وتعزيزها، ونقاط ضعفي والعمل على تحسينها. وهذا هو جوهر الأمانة مع النفس والتطوير المهني المستمر.</p>
+                    </div>
+                    <div class="evidence-section">
+                        <div class="evidence-title">📎 الأدلة</div>
+                        <div class="evidence-title" style="font-size: 1em; color: #6c757d; margin-top: -5px;">File Attachments:</div>
+                        <ul class="file-list">
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/10NegjHnkQ0an31it2HavV07jQhxVEz36-DfVWaoQLZk/edit?usp=sharing" target="_blank">ورقة بحثية<span class="download-btn">تحميل</span></a></li>
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1D4ZNA3CrOk0YhZ0KvYy2WaynHfZyBQ0E5n7LZ9j8LJg/edit?usp=sharing" target="_blank">صحف التفكر<span class="download-btn">تحميل</span></a></li><li><span class="file-icon">📄</span> <a href="https://drive.google.com/file/d/1iNfMAwaO7-vytmJ_OisCjUT7OTHo6Aoz/view?usp=drive_link" target="_blank">تقرير لقاء ولي الأمر<span class="download-btn">تحميل</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Initiative Page -->
+                <div id="initiative" class="page-section active">
+                    <div class="breadcrumb"><a href="file:///C:/Users/%D8%B2%D9%8A%D8%AF%D8%A7%D9%86/Desktop/index.html#" data-page="home">HOME</a> &gt; المبادرة</div>
+                    <h2 class="page-title">المبادرة</h2>
+                    <div class="outcomes">
+                         شرح وتوضيح مزايا القيادة الفعالة في السياقات الشخصية والعامة.<br>
+                         تقييم وتطوير الممارسات المهنية بالإضافة إلى ترك انطباعك حوله.
+                    </div>
+                    <div class="impression-title"><span>الانطباعات</span></div>
+                    <div class="impression-image">
+                        <img src="./الملف الإلكتروني - زيدان بوكمة النسخة النهائية 2_files/pexels-photo-11035474.jpeg" alt="صواريخ ورقية - مبادرة">
+                    </div>
+                    <div class="content-text">
+                        <h3>10- المُبادرة:</h3>
+                        <p>حرصت طوال مسيرتي الأكاديمية والمهنية على أن أكون مبادراً، لا مجرد منفذ للتعليمات. فالمبادرة صفة القادة والمتميزين. ومن أبرز مبادراتي خلال فترة الدراسة والتدريب الميداني:</p>
+                        <h4>1- ورشة "توظيف منصة Nearpod في التدريس":</h4>
+                        <p>بعد أن لمست بنفسي الأثر الإيجابي الكبير لاستخدام منصة Nearpod في زيادة تفاعل الطلاب، بادرت باقتراح وتنظيم ورشة تدريبية مصغرة لزملائي المتدربين في المدرسة. قدمت لهم فيها:</p>
+                        <ul>
+                            <li>شرحاً مبسطاً لمزايا المنصة.</li>
+                            <li>تدريباً عملياً على كيفية إنشاء حساب وتصميم درس تفاعلي.</li>
+                            <li>نماذج من الدروس التي صممتها.</li>
+                        </ul>
+                        <p>وقد لاقت الورشة استحساناً كبيراً، وأبدى العديد من الزملاء رغبتهم في تطبيق هذه الأداة في تدريسهم.</p>
+                        <h4>2- المشاركة في مسابقة القرآن الكريم:</h4>
+                        <p>شاركت في مسابقة القرآن الكريم على مستوى جامعة قطر في فرع حفظ خمسة أجزاء. وقد كانت هذه المشاركة تجربة ثرية، حيث:</p>
+                        <ul>
+                            <li>طورت مهاراتي في التلاوة والتجويد.</li>
+                            <li>تعلمت الانضباط والمثابرة.</li>
+                            <li>اكتسبت ثقة أكبر في قدرتي على تلاوة القرآن أمام الجمهور.</li>
+                        </ul>
+                        <p>وقد انعكس ذلك إيجاباً على أدائي كمعلم تربية إسلامية، حيث أصبحت أكثر ثقة في تلاوتي النموذجية أمام الطلاب.</p>
+                        <h4>3- حضور ورشة "مهارات الإدارة الصفية":</h4>
+                        <p>بادرت بالتسجيل في ورشة تدريبية متخصصة عن "مهارات الإدارة الصفية للمعلمين الجدد"، نظمها مركز التدريب والتطوير التربوي بوزارة التربية والتعليم. تناولت الورشة:</p>
+                        <ul>
+                            <li>استراتيجيات عملية لضبط الصف دون عنف.</li>
+                            <li>كيفية بناء علاقات إيجابية مع الطلاب.</li>
+                            <li>التعامل مع السلوكيات الصعبة بطرق تربوية.</li>
+                        </ul>
+                        <p>وقد استفدت كثيراً من هذه الورشة، وطبقت ما تعلمته أثناء تدريبي الميداني، مما ساعدني في خلق بيئة صفية إيجابية ومنتجة.</p>
+                        <h4>4- حضور مؤتمر "التعليم في العصر الرقمي: آفاق وتحديات":</h4>
+                        <p>حرصت على حضور هذا المؤتمر الافتراضي الذي نظمته كلية التربية بجامعة قطر. استمعت إلى أوراق عمل ومناقشات حول:</p>
+                        <ul>
+                            <li>دور الذكاء الاصطناعي في تخصيص التعلم.</li>
+                            <li>تحديات الأمن السيبراني في التعليم الإلكتروني.</li>
+                            <li>أفضل الممارسات في توظيف منصات التعلم التفاعلية.</li>
+                        </ul>
+                        <p>وقد فتح هذا المؤتمر آفاقاً جديدة في تفكيري حول مستقبل التعليم، وحفزني على مواصلة تطوير مهاراتي في توظيف التكنولوجيا.</p>
+                        <h4>5- التطوع في أنشطة المدرسة:</h4>
+                        <p>خلال فترة التدريب الميداني، تطوعت للمساعدة في تنظيم فعاليات المدرسة، مثل: الإذاعة المدرسية، والاحتفال بالمناسبات الدينية (الإسراء والمعراج، شهر رمضان). وقد ساعدني ذلك على الاندماج مع مجتمع المدرسة، وبناء علاقات إيجابية مع الإدارة والزملاء والطلاب.</p>
+                    </div>
+                    <div class="evidence-section">
+                        <div class="evidence-title">📎 الأدلة</div>
+                        <div class="evidence-title" style="font-size: 1em; color: #6c757d; margin-top: -5px;">File Attachments:</div>
+                        <ul class="file-list">
+                            <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/1Auoh8kaTPctpu0WiKLpsdA5beGSJ8CQv9S3KrqODmjA/edit?usp=sharing" target="_blank">البحث الاجرائي<span class="download-btn">تحميل</span></a></li>
+                        <li><span class="file-icon">📄</span> <a href="https://docs.google.com/document/d/10NegjHnkQ0an31it2HavV07jQhxVEz36-DfVWaoQLZk/edit?usp=sharing" target="_blank">ورقة بحثية<span class="download-btn">تحميل</span></a></li></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <span>Author: زيدان بوكمة</span>
+            <span>Last modified: 24/04/2026</span>
+        </div>
+    </div>
+    <script>
+        const sidebarItems = document.querySelectorAll('.sidebar-item');
+        const pages = document.querySelectorAll('.page-section');
+        const breadcrumbLinks = document.querySelectorAll('[data-page]');
+        function switchPage(pageId) {
+            pages.forEach(page => page.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+            sidebarItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.dataset.page === pageId) item.classList.add('active');
+            });
+        }
+        sidebarItems.forEach(item => item.addEventListener('click', () => switchPage(item.dataset.page)));
+        breadcrumbLinks.forEach(link => link.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (link.dataset.page) switchPage(link.dataset.page);
+        }));
+    </script>
+
+</body></html>
